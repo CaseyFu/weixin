@@ -1,0 +1,17 @@
+<view wx:if="{{score >= 90}}">优秀</view>
+<view wx:elif="{{score >= 70}}">良好</view>
+<view wx:elif="{{score >= 60}}">及格</view>
+<view wx:else>不及格</view>
+
+<template name="testName">
+     <view>firstName:{{firstName}},lastName:{{lastName}}</view>
+</template>
+
+<template is="testName" data="{{...testName0}}"></template>
+<template is="testName" data="{{...testName1}}"></template>
+<template is="testName" data="{{...testName2}}"></template>
+<view>
+     <button bindtap='add'>点我</button>
+     <view>{{count}}</view>
+</view>
+<view bindtap='viewTap'>click me</view>
