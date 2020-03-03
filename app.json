@@ -1,46 +1,46 @@
 {
-     "pages": [
-          "pages/video/video",
-          "pages/index/index",
-          "pages/custom/custom",
-          
-          "pages/guessFist/guessFist"
-     ],
-     "window": {
-          "backgroundTextStyle": "dark",
-          "navigationBarBackgroundColor": "white",
-          "navigationBarTitleText": "CaseyFu",
-          "navigationBarTextStyle": "black"
-     },
-     "tabBar": {
-          "color": "#000000",
-          "backgroundColor": "white",
-          "list": [
-               {
-                    "pagePath": "pages/guessFist/guessFist",
-                    "text": "猜拳",
-                    "iconPath": "tabBar/icon/guessFist.png",
-                    "selectedIconPath": "tabBar/selectedIcon/guessFist.png"
-               },
-               {
-                    "pagePath": "pages/index/index",
-                    "text": "index",
-                    "iconPath": "tabBar/icon/guessFist.png",
-                    "selectedIconPath": "tabBar/selectedIcon/guessFist.png"
-               },
-               {
-                    "pagePath": "pages/custom/custom",
-                    "text": "custom",
-                    "iconPath": "tabBar/icon/guessFist.png",
-                    "selectedIconPath": "tabBar/selectedIcon/guessFist.png"
-               },
-               {
-                    "pagePath": "pages/video/video",
-                    "text": "video",
-                    "iconPath": "tabBar/icon/video.png",
-                    "selectedIconPath": "tabBar/selectedIcon/video.jpg"
-               }
-          ]
-          
-     }
+	"pages": [
+		"pages/index/index",
+		"pages/qr/qr",
+		"pages/video/video",
+		"pages/custom/custom",
+		"pages/guessFist/guessFist"
+	],
+	"window": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#CECECE",
+		"navigationBarTitleText": "CaseyFu",
+		"navigationBarTextStyle": "black"
+	},
+	"tabBar": {
+		"color": "#000000",
+		"backgroundColor": "white",
+		"list": [
+			{
+				"pagePath": "pages/guessFist/guessFist",
+				"text": "猜拳",
+				"iconPath": "/images/icon/guessFist.png",
+				"selectedIconPath": "/images/selectedIcon/guessFist.png"
+			},
+			{
+				"pagePath": "pages/index/index",
+				"text": "主页",
+				"iconPath": "/images/icon/guessFist.png",
+				"selectedIconPath": "/images/selectedIcon/guessFist.png"
+			},
+			{
+				"pagePath": "pages/custom/custom",
+				"text": "测试页面1",
+				"iconPath": "/images/icon/home.png",
+				"selectedIconPath": "/images/selectedIcon/home.png"
+			},
+			{
+				"pagePath": "pages/video/video",
+				"text": "测试页面2",
+				"iconPath": "/images/icon/video.png",
+				"selectedIconPath": "/images/selectedIcon/video.jpg"
+			}
+		]
+	},
+	"sitemapLocation": "sitemap.json"
 }

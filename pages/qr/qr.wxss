@@ -1,0 +1,9 @@
+/* pages/video/video.wxss */
+.container{
+    
+}
+.confirm-button{
+     border:1px solid gray;
+     padding:3px;
+     border-radius: 2px;
+}
