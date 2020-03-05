@@ -1,8 +1,11 @@
 <view class='container'>
-    <view>下面是canvas</view>
+    <view>{{url}}</view>
     <view>
-        <canvas style="width:750rpx;height:750rpx;background-color:lightgray" id="{{canvasId}}" canvas-id="{{canvasId}}" />
+        <canvas style="width:500rpx;height:500rpx" id="{{canvasId}}" canvas-id="{{canvasId}}" />
     </view>
-    <input type="text" name="url" placeholder="输入url" class="confirm-button" />
-    <button bindtap="creatQRCode" size="mini" type="primary">提交</button>
+    <form class="form" bindsubmit="getUrl">
+        <input class="input-url" type="text" name="url" placeholder="{{url}}" />
+        <view class="stuff"></view>
+        <button class="submit-btn" form-type="submit" size="mini" type="primary">提交</button>
+    </form>
 </view>

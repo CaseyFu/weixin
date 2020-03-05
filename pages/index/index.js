@@ -56,9 +56,9 @@ Page({
       hasUserInfo: true
     })
   },
-  toTwoD: function () {
+  toTwoD() {
     wx.navigateTo({
-      url: 'pages/video/video'
+      url: '/pages/qr/qr'
     })
   }
 })

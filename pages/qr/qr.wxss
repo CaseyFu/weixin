@@ -2,8 +2,18 @@
 .container{
     
 }
-.confirm-button{
+.form{
+     display: block;
+     width: 80%;
+     height: 80%;
+}
+.input-url{
      border:1px solid gray;
      padding:3px;
-     border-radius: 2px;
+     border-radius: 5px;
+     font-size: .9rem;
+}
+.submit-btn{
+     display: block;
+     width: 100%;
 }

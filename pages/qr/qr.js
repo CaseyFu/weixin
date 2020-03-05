@@ -2,26 +2,35 @@
 const QR = require("wxmp-qrcode")
 // import QR from "wxmp-qrcode"
 Page({
-
-     /**
-      * 页面的初始数据
-      */
-     data: {
-          canvasId: 'canvasId',
-          QRdata: 'https://github.com'
+     onLoad: function (options) {
+          this.creatQRCode(this.data.url)
      },
-     creatQRCode() {
-          let str = this.data.QRdata
+     data: {
+          canvasId: "canvasId",
+          url: "https://www.cnblogs.com/xfk1999/"
+     },
+     creatQRCode(url) {
           let canvasId = this.data.canvasId
-          QR.qrApi.draw(str, canvasId, () => {
+          QR.qrApi.draw(url, canvasId, () => {
                console.log('draw success!')
           })
      },
-     /**
-      * 生命周期函数--监听页面加载
-      */
-     onLoad: function (options) {
+     getUrl(e) {
+          let url = e.detail.value.url
+          if (url == "") return
+          wx.showToast({
+               title: "生成中",
+               icon: "loading",
+               duration: 500
+          })
+          let that = this
+          let timer = setTimeout(() => {
+               that.creatQRCode(url);
+               wx.hideToast();
+               clearTimeout(timer)
+          }, 500)
      },
+
 
      /**
       * 生命周期函数--监听页面初次渲染完成

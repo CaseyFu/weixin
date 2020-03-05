@@ -29,8 +29,8 @@
 				"selectedIconPath": "/images/selectedIcon/guessFist.png"
 			},
 			{
-				"pagePath": "pages/custom/custom",
-				"text": "测试页面1",
+				"pagePath": "pages/qr/qr",
+				"text": "定制二维码",
 				"iconPath": "/images/icon/home.png",
 				"selectedIconPath": "/images/selectedIcon/home.png"
 			},
