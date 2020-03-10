@@ -1,4 +1,5 @@
 <view class='container'>
+    <view>待完善...</view>
     <view>{{url}}</view>
     <view>
         <canvas style="width:500rpx;height:500rpx" id="{{canvasId}}" canvas-id="{{canvasId}}" />
@@ -8,4 +9,5 @@
         <view class="stuff"></view>
         <button class="submit-btn" form-type="submit" size="mini" type="primary">提交</button>
     </form>
+    <back-home-btn></back-home-btn>
 </view>

@@ -1,9 +1,0 @@
-/* pages/video/video.wxss */
-page{
-     height:100%;
-     
-}
-.content{
-     min-height:100%;
-     background-color:pink;
-}

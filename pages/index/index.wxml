@@ -1,10 +1,6 @@
 <!-- index.wxml -->
 <view class="container">
-  <navigator url="/pages/qr/qr" open-type="navigate" hover-class="other-navigator-hover">
-    navigator跳转二维码页面
-  </navigator>
-  <button class="btn" type="primary" bindtap="toQR" size="mini">js跳转二维码页面</button>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+    <view class="usermotto">
+        <text class="user-motto">{{motto}}</text>
+    </view>
 </view>

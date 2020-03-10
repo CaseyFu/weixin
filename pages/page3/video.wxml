@@ -1,6 +1,0 @@
-<view class='content'>
-    <view>下面是canvas</view>
-    <view class="">
-        <canvas style="width:656rpx;height:343rpx" />
-    </view>
-</view>

@@ -1,0 +1,27 @@
+<view class='container'>
+    <view class="row">登录到系统中:</view>
+    <view class="stuff"></view>
+    <view class="stuff"></view>
+    <view class="row">
+        <view class="item">
+            <form>
+                <label for="username">用户名:</label>
+                <input id="username" name="username" type="text" placeholder="输入用户名" />
+                <view class="stuff"></view>
+                <label for="password">密码:</label>
+                <input id="password" name="password" type="password" placeholder="输入密码" />
+            </form>
+        </view>
+    </view>
+    <view class="stuff"></view>
+    <view class="stuff"></view>
+    <view class="row ">
+        <button type="primary" size="mini">登录</button>
+    </view>
+    <view class="row">
+        <navigator url="/pages/qr/qr" open-type="navigate" hover-class="other-navigator-hover">
+            无法登陆
+        </navigator>
+    </view>
+    <back-home-btn></back-home-btn>
+</view>

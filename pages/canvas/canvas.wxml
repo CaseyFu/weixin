@@ -1,0 +1,14 @@
+<view class='container'>
+    <view>待完善...</view>
+    <view class="canvas-area">
+        <canvas class="canvas-0" canvas-id="myCanvas" disable-scroll="true" bindtouchstart="touchStart" bindtouchmove="touchMove" />
+    </view>
+    <view class="instrument-bar">
+        <view class="instrument-item" bindtap="switchPen" data-param="1">画笔</view>
+        <view class="instrument-item red-color" bindtap="switchColor" data-param="#ee3636">红色</view>
+        <view class="instrument-item blue-color" bindtap="switchColor" data-param="#6da2e7">
+            蓝色
+        </view>
+        <view class="instrument-item" bindtap="switchEraser">橡皮擦</view>
+    </view>
+</view>

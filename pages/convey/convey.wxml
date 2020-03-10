@@ -1,0 +1,16 @@
+<view class="container">
+    <view wx:for="{{items}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+        <view class="item" bindtap="activate" data-param="{{item.pagePath}}">
+            <view class="item-inner">
+                <image class="img" src="/images/convey/{{item.image}}" mode="aspectFit" />
+            </view>
+            <p>{{item.name}}</p>
+        </view>
+    </view>
+    <view class="item" bindtap="activate" data-param="url">
+        <view class="item-inner">
+            <image class="img" src="/images/convey/qr.png" mode="aspectFit" />
+        </view>
+        <p>哈哈哈</p>
+    </view>
+</view>

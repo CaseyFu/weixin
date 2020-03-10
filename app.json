@@ -1,46 +1,40 @@
 {
-	"pages": [
-		"pages/index/index",
-		"pages/qr/qr",
-		"pages/video/video",
-		"pages/custom/custom",
-		"pages/guessFist/guessFist"
-	],
-	"window": {
-		"backgroundTextStyle": "dark",
-		"navigationBarBackgroundColor": "#CECECE",
-		"navigationBarTitleText": "CaseyFu",
-		"navigationBarTextStyle": "black"
-	},
-	"tabBar": {
-		"color": "#000000",
-		"backgroundColor": "white",
-		"list": [
-			{
-				"pagePath": "pages/guessFist/guessFist",
-				"text": "猜拳",
-				"iconPath": "/images/icon/guessFist.png",
-				"selectedIconPath": "/images/selectedIcon/guessFist.png"
-			},
-			{
-				"pagePath": "pages/index/index",
-				"text": "主页",
-				"iconPath": "/images/icon/guessFist.png",
-				"selectedIconPath": "/images/selectedIcon/guessFist.png"
-			},
-			{
-				"pagePath": "pages/qr/qr",
-				"text": "定制二维码",
-				"iconPath": "/images/icon/home.png",
-				"selectedIconPath": "/images/selectedIcon/home.png"
-			},
-			{
-				"pagePath": "pages/video/video",
-				"text": "测试页面2",
-				"iconPath": "/images/icon/video.png",
-				"selectedIconPath": "/images/selectedIcon/video.jpg"
-			}
-		]
-	},
-	"sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/convey/convey",
+        "pages/index/index",
+        "pages/qr/qr",
+        "pages/logs/logs",
+        "pages/guessFist/guessFist",
+        "pages/test/test",
+        "pages/canvas/canvas"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#CECECE",
+        "navigationBarTitleText": "CaseyFu",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#000",
+        "selectedColor": "#000",
+        "backgroundColor": "white",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "主页",
+                "iconPath": "/images/icon/index.png",
+                "selectedIconPath": "/images/selectedIcon/index.png"
+            },
+            {
+                "pagePath": "pages/convey/convey",
+                "text": "传送门",
+                "iconPath": "/images/icon/convey.png",
+                "selectedIconPath": "/images/selectedIcon/convey.png"
+            }
+        ],
+        "position": "bottom"
+    },
+    "usingComponents": {
+        "back-home-btn": "/components/backHomeBtn/backHomeBtn"
+    },
+    "sitemapLocation": "sitemap.json"
 }

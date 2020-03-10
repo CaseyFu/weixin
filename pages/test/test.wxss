@@ -1,0 +1,29 @@
+/* pages/video/video.wxss */
+.container {
+
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: center;
+    align-content: center; */
+}
+
+.item {
+    margin-top: 20rpx;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 10rpx;
+    padding: 8rpx 15rpx;
+}
+
+navigator {
+    text-decoration: underline;
+}
