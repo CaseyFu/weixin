@@ -51,6 +51,11 @@ Page({
                 "name": "测试",
                 "image": "login.png",
                 "pagePath": "/pages/test/test"
+            },
+            {
+                "name": "问卷调查",
+                "image": "questionnaire.png",
+                "pagePath": "/pages/questionnaire/questionnaire"
             }
         ]
     },

@@ -1,7 +1,10 @@
 /**index.wxss**/
-.container{
-  
-}
-.usermotto {
-  margin-top: 200px;
+.container {}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100% 100%;
+    z-index: -1;
 }
