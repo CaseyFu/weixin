@@ -1,0 +1,18 @@
+<view class='container'>
+    <view wx:for="{{list}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+        <i-card title="{{item.title}}" extra="{{index}}">
+            <view slot="content">
+                <image src="/images/background/{{item.name}}" class="img" />
+            </view>
+            <view slot="footer">
+                {{item.comment}}
+                <view>
+                    <i-button bind:click="handleClick" type="success" size="small" shape="circle" data-param="{{item.name}}">
+                        换上
+                    </i-button>
+                </view>
+            </view>
+        </i-card>
+    </view>
+    <i-message id="message" />
+</view>

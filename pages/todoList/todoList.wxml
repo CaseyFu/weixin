@@ -1,0 +1,11 @@
+<view class='container'>
+    <image src="/images/background/4.jpg" class="background" />
+    <view class="stuff"></view>
+    <i-button bind:click="test" type="success">测试worker</i-button>
+    <i-button bind:click="onShow" type="success">展示</i-button>
+    <i-button bind:click="rotateAndScale" type="success">旋转1</i-button>
+    <i-button bind:click="rotateThenScale" type="success">旋转2</i-button>
+    <i-button bind:click="rotateAndScaleThenTranslate" type="success">旋转3</i-button>
+    <view animation="{{animationData}}" style="background:red;height:50rpx;width:100rpx"></view>
+    <back-home-btn></back-home-btn>
+</view>

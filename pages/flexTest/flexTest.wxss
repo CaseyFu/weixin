@@ -1,0 +1,58 @@
+/* pages/video/video.wxss */
+
+.container {}
+
+.do-flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.do-flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+.row-item {
+    background-color: pink;
+}
+
+.item {
+    display: block;
+    background: lightgray;
+    width: 150rpx;
+    height: 150rpx;
+    margin: 5rpx;
+    text-align: center;
+    line-height: 150rpx;
+}
+
+
+
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
+}
+
+.order-3 {
+    order: 3;
+}
+
+.order-4 {
+    order: 4;
+}
+
+.order-5 {
+    order: 5;
+}

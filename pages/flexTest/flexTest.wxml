@@ -1,0 +1,27 @@
+<view class='container'>
+    <image src="/images/background/1.jpg" class="background" />
+    <view class="stuff"></view>
+    <i-button bind:click="rotate" type="success">旋转</i-button>
+    <i-button bind:click="blowUp" type="success">放大</i-button>
+    <i-button bind:click="shrink" type="success">缩小</i-button>
+    <i-button bind:click="translate" type="success">移动</i-button>
+    <view animation="{{animationData}}" style="background:skyblue;height:100rpx;width:100rpx"></view>
+    abcdefghijklmnopqrstuvwxyz
+    <view class="row-item">横向排列</view>
+    <view class="do-flex-row">
+        <view class="item order-4">视图1</view>
+        <view class="item order-2">视图2</view>
+        <view class="item order-3">视图3</view>
+        <view class="item order-1">视图4</view>
+    </view>
+    <view class="stuff"></view>
+    <view class="stuff"></view>
+    <view class="row-item">纵向排列</view>
+    <view class="do-flex-column">
+        <view class="item order-3">视图1</view>
+        <view class="item order-2">视图2</view>
+        <view class="item order-4">视图3</view>
+        <view class="item order-1">视图4</view>
+    </view>
+    <back-home-btn></back-home-btn>
+</view>

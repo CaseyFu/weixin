@@ -1,9 +1,31 @@
 /**app.wxss**/
 
+/* @import "/utils/jetbrain.wxss"; */
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: local("/static/fonts/JetBrainsMono-Regular.woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container {
+    font-family: 'JetBrains Mono';
+    font-weight: normal;
+    font-style: normal;
+}
+
 .stuff {
     height: 30rpx;
 }
 
 .big-stuff {
     height: 100rpx;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-size: 100% 100%;
+    z-index: -1;
 }

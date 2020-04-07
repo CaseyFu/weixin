@@ -1,4 +1,10 @@
 <!-- index.wxml -->
 <view class="container">
-    <image class='background' src="/images/sky.jpg"></image>
+    <image class='background' src="/images/background/{{backgroundImage}}"></image>
+    <view class="big-stuff"></view>
+    <view class="big-stuff"></view>
+    <view class="big-stuff"></view>
+    <view class="big-stuff"></view>
+    <view class="stuff"></view>
+    <i-button bind:click="refresh" type="success">刷新</i-button>
 </view>

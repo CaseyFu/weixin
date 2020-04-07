@@ -24,8 +24,6 @@ Page({
     onShareAppMessage() {
         // 用户点击右上角分享
     },
-
-
     data: {
         items: [{
                 "name": "猜拳小游戏",
@@ -56,8 +54,28 @@ Page({
                 "name": "问卷调查",
                 "image": "questionnaire.png",
                 "pagePath": "/pages/questionnaire/questionnaire"
+            },
+            {
+                "name": "todoList",
+                "image": "todoList.png",
+                "pagePath": "/pages/todoList/todoList"
+            },
+            {
+                "name": "本地存储管理",
+                "image": "local.png",
+                "pagePath": "/pages/localStorage/localStorage"
+            },
+            {
+                "name": "更换壁纸",
+                "image": "background.png",
+                "pagePath": "/pages/background/background"
+            },
+            {
+                "name": "flex及动画",
+                "image": "spring.png",
+                "pagePath": "/pages/flexTest/flexTest"
             }
-        ]
+        ],
     },
     activate(e) {
         wx.navigateTo({

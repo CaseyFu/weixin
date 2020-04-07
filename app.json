@@ -1,13 +1,21 @@
 {
     "pages": [
 
-        "pages/questionnaire/questionnaire",
-        "pages/index/index",
+        "pages/test/test",
+
+        "pages/flexTest/flexTest",
+        "pages/todoList/todoList",
         "pages/convey/convey",
+        "pages/background/background",
+
+
+        "pages/localStorage/localStorage",
+        "pages/index/index",
+
+        "pages/questionnaire/questionnaire",
         "pages/qr/qr",
         "pages/logs/logs",
         "pages/guessFist/guessFist",
-        "pages/test/test",
         "pages/canvas/canvas"
 
     ],
@@ -47,7 +55,16 @@
         "i-panel": "/dist/panel/index",
         "i-radio-group": "/dist/radio-group/index",
         "i-radio": "/dist/radio/index",
-        "i-button": "/dist/button/index"
+        "i-button": "/dist/button/index",
+        "i-message": "../../dist/message/index",
+        "i-progress": "../../dist/progress/index",
+        "i-modal": "../../dist/modal/index",
+        "i-card": "../../dist/card/index"
+
+
+
+
     },
+    "workers": "workers",
     "sitemapLocation": "sitemap.json"
 }

@@ -1,4 +1,5 @@
 <view class="container">
+    <image class="background" src="/images/background/2.jpg" />
     <i-row>
         <i-col span="6" i-class="col-class item" wx:for="{{items}}" wx:key="index" wx:for-index="index" wx:for-item="item" bindtap="activate" data-param="{{item.pagePath}}">
             <view class="item-inner">
