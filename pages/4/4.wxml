@@ -1,0 +1,24 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">1. for属性绑定id</view>
+        <radio-group class="group" bindchange="radioChange">
+            <view wx:for="{{a}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+                <radio id="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></radio>
+                <label class="label-2-text" for="{{item.name}}">
+                    <text>{{item.name}}</text>
+                </label>
+            </view>
+        </radio-group>
+    </view>
+    <view class="box">
+        <view class="title">2. 控件直接放label内部</view>
+        <checkbox-group class="group" bindchange="checkboxChange">
+            <view wx:for="{{a}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+                <label>
+                    <checkbox name="{{item.name}}" value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+                    <text class="label-1-text">{{item.name}}</text>
+                </label>
+            </view>
+        </checkbox-group>
+    </view>
+</view>

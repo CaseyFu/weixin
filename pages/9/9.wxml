@@ -1,0 +1,18 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">1. 滑动条右侧显示当前取值</view>
+        <slider bindchange="slider3change" show-value />
+    </view>
+    <view class="box">
+        <view class="title">2. 自定义滑动条样式</view>
+        <slider bindchange="slider3change" activeColor="#F76260" block-color="#F76260" />
+    </view>
+    <view class="box">
+        <view class="title">3. 禁止滚动条</view>
+        <slider bindchange="slider3change" show-value />
+    </view>
+    <view class="box">
+        <view class="title">4. 滑动条监听</view>
+        <slider bindchange="slider3change" show-value disabled="true"/>
+    </view>
+</view>

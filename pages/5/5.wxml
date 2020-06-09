@@ -1,0 +1,13 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">表单组件form的应用</view>
+        <input placeholder="请输入用户名"></input>
+        <view class="stuff"></view>
+        <input placeholder="请输入密码" password="ture"></input>
+        <view class="stuff"></view>
+        <view class="do-flex-row">
+            <button size="mini">提交</button>
+            <button size="mini">重置</button>
+        </view>
+    </view>
+</view>

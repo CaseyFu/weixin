@@ -36,31 +36,7 @@ Page({
                 "comment": "评论, 多说一点话, 不行了, 我out了呵呵哈哈哈或或或或或或或或或或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或呵呵哈哈哈或或或或或或或或或或或或或或或或或或或"
             },
             {
-                "name": "2.jpg",
-                "title": "",
-                "extra": "",
-                "comment": ""
-            },
-            {
-                "name": "3.jpg",
-                "title": "",
-                "extra": "",
-                "comment": ""
-            },
-            {
-                "name": "4.jpg",
-                "title": "",
-                "extra": "",
-                "comment": ""
-            },
-            {
                 "name": "6.jpg",
-                "title": "",
-                "extra": "",
-                "comment": ""
-            },
-            {
-                "name": "8.jpg",
                 "title": "",
                 "extra": "",
                 "comment": ""

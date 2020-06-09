@@ -1,0 +1,21 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">audio</view>
+        <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" id="myAudio" controls loop></audio>
+        <view class="do-flex-row">
+            <button type="primary" bindtap="audioPlay" size="mini">播放</button>
+            <button type="warn" bindtap="audioPause" size="mini">暂停</button>
+            <button type="primary" bindtap="audioStart" size="mini">重新播放</button>
+        </view>
+        <view class="stuff"></view>
+        <view wx:for="{{song}}" wx:key="index" wx:for-index="index" wx:for-item="item" style="margin:10rpx;background:#E0E3E8" bindtap="play" data-param="{{item}}">
+            <view style="float:left;height:100rpx;width:100rpx;">
+                <image src="{{item.poster}}" style="width:100rpx;height:100rpx;" />
+            </view>
+            <view style="float:left;height:100rpx;line-height:100rpx;">
+                {{item.name}}-{{item.author}}
+            </view>
+            <view style="clear:both;"></view>
+        </view>
+    </view>
+</view>

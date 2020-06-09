@@ -26,8 +26,26 @@ Page({
     },
 
     data: {
-
+        text1: [{
+            name: 'div',
+            attrs: {
+                style: 'line-heigt:60px;color:red;font-weight:bold'
+            },
+            children: [{
+                type: 'text',
+                text: 'hellow world!'
+            }]
+        }],
+        text2: [{
+            name: 'div',
+            attrs: {
+                class: 'custom'
+            },
+            children: [{
+                type: 'text',
+                text: 'hellow world!'
+            }]
+        }],
+        text3: '<div style="text-align:right;line-height:60px;color:red;line-weight:bold">hellow world!</div>'
     },
-
-
 })

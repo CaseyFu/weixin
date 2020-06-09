@@ -1,0 +1,11 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">循环批量生产radio</view>
+        <radio-group>
+            <view wx:for="{{arr}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+                <radio value="{{item.name}}" checked="{{item.checked}}" />
+                {{item.name}}
+            </view>
+        </radio-group>
+    </view>
+</view>

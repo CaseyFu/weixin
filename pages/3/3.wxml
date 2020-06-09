@@ -1,0 +1,22 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">1. 密码输入框</view>
+        <input password="true" placeholder="请输入密码" />
+    </view>
+    <view class="box">
+        <view class="title">2. 限制最大长度</view>
+        <input type="text" placeholder="最大长度为10" maxlength="10" />
+    </view>
+    <view class="box">
+        <view class="title">3. 禁用输入框</view>
+        <input type="text" placeholder="已被禁用" disabled="true" />
+    </view>
+    <view class="box">
+        <view class="title">4. 自定义placeholder</view>
+        <input type="text" placeholder-style="color:#F76260" placeholder="这里是自定义的样式" disabled="true" />
+    </view>
+    <view class="box">
+        <view class="title">5. 输入框事件监听</view>
+        <input type="text" placeholder-style="color:#41B883" placeholder="这里的数据被绑定" bindinput="bindKeyInput" />
+    </view>
+</view>

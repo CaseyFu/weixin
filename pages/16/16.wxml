@@ -1,0 +1,14 @@
+<view class='container'>
+    <w-header></w-header>
+    <view class="title">网络请求request</view>
+    <view class="box">
+        <view class="title">wx.request()</view>
+        <input bindinput="bindKeyInput" placeholder="输入单词" />
+        <i-button bind:click="doSearch" type="primary">读取数据</i-button>
+        <view>单词:{{value}}</view>
+        <view>中文释义:{{meaning}}</view>
+        <view>英文释义:{{en_meaning}}</view>
+    </view>
+    <w-footer></w-footer>
+    <i-message id="message" />
+</view>

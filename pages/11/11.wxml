@@ -1,0 +1,14 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">1. 自动变高</view>
+        <textarea bindblur="bindTextAreaBlur" auto-height placeholder="自动变高" />
+    </view>
+    <view class="box">
+        <view class="title">2. 自定义样式</view>
+        <textarea height="300" bindblur="bindTextAreaBlur" placeholder-style="color:#F76260" placeholder="自定义placeholder颜色" />
+    </view>
+    <view class="box">
+        <view class="title">3. 被禁用状态</view>
+        <textarea height="300" bindblur="bindTextAreaBlur" placeholder="已被禁用" disabled="true" />
+    </view>
+</view>

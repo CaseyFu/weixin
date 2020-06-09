@@ -1,0 +1,11 @@
+<view class='container'>
+    <w-header />
+    <view class="box">
+        <view class="title">循环</view>
+        <view wx:for="{{arr}}" wx:key="index" wx:for-index="index" wx:for-item="item">
+            id:{{index}}. name:{{item.name}}. age:{{item.age}}. 
+        </view>
+    </view>
+    <w-footer />
+    <i-message id="message" />
+</view>

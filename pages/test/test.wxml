@@ -1,1 +1,21 @@
-<view class='container'></view>
+<view class='container'>
+    <view style="text-align:center">富文本练习</view>
+    <view class='box'>
+        <view>1). 使用style样式</view>
+        <view>
+            <rich-text nodes="{{text1}}"></rich-text>
+        </view>
+    </view>
+    <view class="box">
+        <view>2). 使用class样式</view>
+        <view>
+            <rich-text nodes="{{text2}}"></rich-text>
+        </view>
+    </view>
+    <view class="box">
+        <view>3). 一个节点</view>
+        <view>
+            <rich-text nodes="{{text3}}"></rich-text>
+        </view>
+    </view>
+</view>

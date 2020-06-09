@@ -1,35 +1,51 @@
 {
     "pages": [
+        "pages/convey/convey",
+        "pages/circle/circle",
+        "pages/17/17",
+        
+
+        "pages/16/16",
+        "pages/15/15",
+        "pages/14/14",
+        "pages/12/12",
+        "pages/13/13",
+        "pages/6/6",
+        "pages/7/7",
+        "pages/8/8",
+        "pages/9/9",
+        "pages/10/10",
+        "pages/11/11",
+        "pages/4/4",
+        "pages/3/3",
+        "pages/2/2",
 
         "pages/test/test",
-
+        "pages/index/index",
         "pages/flexTest/flexTest",
         "pages/todoList/todoList",
-        "pages/convey/convey",
         "pages/background/background",
-
-
         "pages/localStorage/localStorage",
-        "pages/index/index",
-
         "pages/questionnaire/questionnaire",
         "pages/qr/qr",
         "pages/logs/logs",
         "pages/guessFist/guessFist",
-        "pages/canvas/canvas"
-
+        "pages/canvas/canvas",
+        "pages/5/5"
     ],
     "window": {
-        "backgroundTextStyle": "dark",
-        "navigationBarBackgroundColor": "#CECECE",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#41B883",
         "navigationBarTitleText": "CaseyFu",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "white"
     },
     "tabBar": {
         "color": "#000",
         "selectedColor": "#000",
         "backgroundColor": "white",
-        "list": [{
+        "list": [
+
+            {
                 "pagePath": "pages/index/index",
                 "text": "主页",
                 "iconPath": "/images/icon/index.png",
@@ -40,6 +56,12 @@
                 "text": "传送门",
                 "iconPath": "/images/icon/convey.png",
                 "selectedIconPath": "/images/selectedIcon/convey.png"
+            },
+            {
+                "pagePath": "pages/test/test",
+                "text": "富文本练习",
+                "iconPath": "/images/icon/game.png",
+                "selectedIconPath": "/images/selectedIcon/game.png"
             }
         ],
         "position": "bottom"
@@ -56,10 +78,12 @@
         "i-radio-group": "/dist/radio-group/index",
         "i-radio": "/dist/radio/index",
         "i-button": "/dist/button/index",
-        "i-message": "../../dist/message/index",
-        "i-progress": "../../dist/progress/index",
-        "i-modal": "../../dist/modal/index",
-        "i-card": "../../dist/card/index"
+        "i-message": "/dist/message/index",
+        "i-progress": "/dist/progress/index",
+        "i-modal": "/dist/modal/index",
+        "i-card": "/dist/card/index",
+        "w-header": "/components/header/header",
+        "w-footer": "/components/footer/footer"
 
 
 

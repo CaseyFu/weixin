@@ -23,5 +23,5 @@
         <view class="item order-4">视图3</view>
         <view class="item order-1">视图4</view>
     </view>
-    <back-home-btn></back-home-btn>
+    <back-home-btn>返回主页</back-home-btn>
 </view>

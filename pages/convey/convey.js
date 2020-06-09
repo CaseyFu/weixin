@@ -74,6 +74,91 @@ Page({
                 "name": "flex及动画",
                 "image": "spring.png",
                 "pagePath": "/pages/flexTest/flexTest"
+            },
+            {
+                "name": "1. 循环",
+                "image": "mission.png",
+                "pagePath": "/pages/circle/circle"
+            },
+            {
+                "name": "2. checkbox",
+                "image": "mission.png",
+                "pagePath": "/pages/2/2"
+            },
+            {
+                "name": "3. input",
+                "image": "mission.png",
+                "pagePath": "/pages/3/3"
+            },
+            {
+                "name": "4. label",
+                "image": "mission.png",
+                "pagePath": "/pages/4/4"
+            },
+            {
+                "name": "5. form",
+                "image": "mission.png",
+                "pagePath": "/pages/5/5"
+            },
+            {
+                "name": "6. picker",
+                "image": "mission.png",
+                "pagePath": "/pages/6/6"
+            },
+            {
+                "name": "7. picker-view",
+                "image": "mission.png",
+                "pagePath": "/pages/7/7"
+            },
+            {
+                "name": "8. radio",
+                "image": "mission.png",
+                "pagePath": "/pages/8/8"
+            },
+            {
+                "name": "9. slider",
+                "image": "mission.png",
+                "pagePath": "/pages/9/9"
+            },
+            {
+                "name": "10. switch",
+                "image": "mission.png",
+                "pagePath": "/pages/10/10"
+            },
+            {
+                "name": "11. textarea",
+                "image": "mission.png",
+                "pagePath": "/pages/11/11"
+            },
+            {
+                "name": "12. audio",
+                "image": "mission.png",
+                "pagePath": "/pages/12/12"
+            },
+            {
+                "name": "13. audio",
+                "image": "mission.png",
+                "pagePath": "/pages/13/13"
+            },
+            {
+                "name": "14. audio",
+                "image": "mission.png",
+                "pagePath": "/pages/14/14"
+            },
+            {
+                "name": "15. audio",
+                "image": "mission.png",
+                "pagePath": "/pages/15/15"
+            },
+            {
+                "name": "16. 网络",
+                "image": "mission.png",
+                "pagePath": "/pages/16/16"
+            },
+            {
+                "name": "17. 图片管理",
+                "image": "mission.png",
+                "pagePath": "/pages/17/17"
             }
         ],
     },

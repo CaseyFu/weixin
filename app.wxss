@@ -1,17 +1,43 @@
 /**app.wxss**/
 
-/* @import "/utils/jetbrain.wxss"; */
-@font-face {
-    font-family: 'JetBrains Mono';
-    src: local("/static/fonts/JetBrainsMono-Regular.woff2");
-    font-weight: normal;
-    font-style: normal;
-}
+@import "/static/fonts/JetBrainsMono.wxss";
 
 .container {
-    font-family: 'JetBrains Mono';
+    font-family: 'JetBrains Mono', monospace, 'Courier New', Courier;
     font-weight: normal;
     font-style: normal;
+    margin-bottom: 40rpx;
+}
+
+.box {
+    border: 1rpx solid gray;
+    margin: 30rpx;
+    padding: 15rpx;
+}
+
+.do-flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+/* .item {
+    display: block;
+} */
+
+.title {
+    text-align: center;
+    margin-bottom: 20rpx;
+}
+
+textarea,
+input {
+    border: 1rpx solid gray;
+    padding: 10rpx;
+    border-radius: 8rpx;
 }
 
 .stuff {

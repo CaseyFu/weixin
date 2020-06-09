@@ -1,4 +1,6 @@
 <view class='container'>
-    <button class="btn" type="warn" bindtap="backHome" size="mini">{{innerText}}</button>
+    <i-button bind:click="backHome" type="error" long="true" size="small">
+        <!-- <slot></slot> -->
+        {{innerText}}
+    </i-button>
 </view>
-<slot></slot>

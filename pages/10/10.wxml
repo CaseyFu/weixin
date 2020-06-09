@@ -1,0 +1,13 @@
+<view class='container'>
+    <view class="box">
+        <view class="title">1. switch</view>
+        <view class="do-flex-row">
+            <view class="item"></view>
+            <view class="item">
+                <switch checked="{{switch1Checked}}" bindchange="switchChange" />
+                打开开关
+            </view>
+            <view class="item"></view>
+        </view>
+    </view>
+</view>
