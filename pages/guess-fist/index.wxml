@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="container-mask">
+        <top-nav navTitle="猜拳"
+            navStyle="background-image: linear-gradient(to bottom, rgba(65, 184, 131, .9), rgba(65, 184, 131, 0));"
+            backUrl="/pages/portal/index" haveHome="true" />
+        <view class="round" wx:if='{{r}}'>第{{round}}回合</view>
+        <view class="round" wx:else>猜拳小游戏</view>
+        <image class="img0 fl" src="{{imagerandom}}"></image>
+        <image class="img1 fr" src="{{imageuser}}"></image>
+        <view class="vs">vs</view>
+        <view class="round clearfix">{{imfor}}</view>
+        <view class='late'>
+            <block wx:for="{{robot}}" wx:key="*this">
+                <image class="img2 fl" src="{{item}}" bindtap='choose' id="{{index}}"></image>
+            </block>
+            <view class="clearfix"></view>
+            <image class="result" src="https://caseyfu.gitee.io/static/img/wx/guess-fist/delight.png" bindtap='start'
+                wx:if='{{!r}}'></image>
+            <image class="result" src="{{result}}" bindtap='start' wx:else
+                style="display:{{nextBureau?'none':'block'}}"></image>
+            <view class="time" style="display:{{(!r||!nextBureau)?'none':'block'}}">{{second}}</view>
+            <view class="buttomTab">胜利:{{victory}}局,平:{{equality}}局,失败:{{defeat}}局,胜率:{{virate}}%</view>
+            <movable-area
+                style="height:520rpx;width:480rpx;position:absolute;top:0rpx;left:0rpx;display:{{nextBureau?'none':'block'}};">
+                <movable-view direction='all' out-of-bounds='true' style="top:22rpx;left:230rpx;">
+                    <button class='nextBureau' hover-class='hoverclass_nextBureau' bindtap='nextBureau'>
+                        <text class='next'>下一局</text>
+                    </button>
+                </movable-view>
+            </movable-area>
+        </view>
+    </view>
+</view>

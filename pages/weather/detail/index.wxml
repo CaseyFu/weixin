@@ -1,0 +1,62 @@
+<!--detail.wxml-->
+<view class="container">
+  <view class="container-mask">
+    <top-nav navTitle="未来三天天气情况" backUrl="/pages/weather/home/index" haveHome="true" navTitleColor="black"
+      navStyle="font-weight:bold" />
+    <view class="container-item"
+      style="background-image: linear-gradient(to bottom right, rgba(240, 240, 240, .8), rgba(200, 200, 200, .8));">
+      <view>
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/city.svg" style="width:45rpx;height:45rpx;vertical-align:middle;"></image>
+        {{address}}
+      </view>
+    </view>
+    <view wx:for="{{daily}}" wx:key="index" wx:for-index="index" wx:for-item="each" class="container-item"
+      style="background-image: linear-gradient(to bottom right, rgba(234, 229, 201, .8), rgba(108, 198, 203, .8));">
+      <view class="fr">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/date.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" /> {{each.fxDate}}
+      </view>
+      <view class="clearfix"></view>
+      <view style="width:250rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/{{each.img}}" style="width:150rpx;height:150rpx;vertical-align:middle;" />
+        {{each.textDay}}
+      </view>
+      <view style="width:400rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/min.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        {{each.tempMin}}℃
+        <text decode>&emsp;</text>~<text decode>&emsp;</text>
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/max.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        <span style="font-size:2rem;">{{each.tempMax}}</span>℃
+      </view>
+      <view style="width:250rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/humidity.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" />湿度:
+        {{each.humidity}}%
+      </view>
+      <view style="width:250rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/uv.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" />UV:
+        {{each.uvIndex}}
+      </view>
+      <view style="width:250rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/winddirection.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" />风向:
+        {{each.windDirDay}}
+      </view>
+      <view style="width:250rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/windspeed.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" />风速:
+        {{each.windSpeedDay}}N
+      </view>
+      <view style="width:250rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/windpower.svg" style="width:45rpx;height:45rpx;vertical-align:middle;" />风力:
+        {{each.windScaleDay}}级
+      </view>
+
+      <view style="width:500rpx;margin:auto;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/sun-rise.svg" style="width:45rpx;height:45rpx;vertical-align:middle;"></image>日出:
+        {{each.sunrise}}
+        <text decode>&emsp;</text><text decode>&emsp;</text>
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/sun-down.svg" style="width:45rpx;height:45rpx;vertical-align:middle;"></image>日落:
+        {{each.sunset}}
+      </view>
+    </view>
+    <i-footer />
+  </view>
+  <image src="https://caseyfu.gitee.io/static/img/wx/bg/bg-sky.jpg" class="bg" />
+</view>

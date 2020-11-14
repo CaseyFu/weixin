@@ -1,0 +1,100 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="container-mask">
+    <top-nav navTitle="天气助手" backUrl="/pages/portal/index" haveHome="true" navTitleColor="black"
+      navStyle="font-weight:bold" />
+    <view class="container-item"
+      style="background-image: linear-gradient(to bottom right, rgba(234, 214, 238, .7), rgba(160, 241, 234, .7));">
+      <view class="container-head fl">
+        <view>当前城市 -
+          <view class="text-link-type" style="display:inline-block;">
+            <picker bindchange="changeRegin" mode="region" value="{{region}}">
+              {{region[2]===""?"选择城市":region[2]}}
+            </picker>
+          </view>
+        </view>
+      </view>
+      <button type="default" plain="true" size="mini" class="fr" bindtap="reLocation">
+        <i-icon type="coordinates" size="20" color="#80848f" />重新定位
+      </button>
+      <view class="clearfix"></view>
+      <view style="width:100%;border-radius:10rpx;text-align:center;"><span
+          style="font-size:6rem;">{{data.temperature}}</span>℃
+      </view>
+      <view class="text-align-center" style="font-size:.7rem;color:#808080;">↓下拉刷新</view>
+      <view class="text-align-center">{{date}}</view>
+      <view style="width:150rpx;height:200rpx;display:inline-block;margin-right:10rpx;">
+        <view style="width:150rpx;height:150rpx">
+          <image src="https://caseyfu.gitee.io/static/img/wx/weather/{{weatherImage}}"
+            style="width:150rpx;height:150rpx;" />
+        </view>
+        <view style="font-size:1.1rem;height:50rpx;text-align:center;">{{data.weather}}</view>
+      </view>
+      <view style="width:150rpx;height:150rpx;display:inline-block;margin-right:10rpx;">
+        <view style="width:50rpx;height:50rpx;margin:auto;">
+          <image src="https://caseyfu.gitee.io/static/img/wx/weather/humidity.png" style="width:50rpx;height:50rpx;" />
+        </view>
+        <view style="font-size:.8rem;height:50rpx;text-align:center;">湿度: {{data.humidity}}%</view>
+      </view>
+      <view style="width:150rpx;height:150rpx;display:inline-block;margin-right:10rpx;">
+        <view style="width:50rpx;height:50rpx;margin:auto;">
+          <image src="https://caseyfu.gitee.io/static/img/wx/weather/winddirection.png"
+            style="width:50rpx;height:50rpx;" />
+        </view>
+        <view style="font-size:.8rem;height:50rpx;text-align:center;">风向: {{data.winddirection}}</view>
+      </view>
+      <view style="width:150rpx;height:150rpx;display:inline-block;margin-right:10rpx;">
+        <view style="width:50rpx;height:50rpx;margin:auto;">
+          <image src="https://caseyfu.gitee.io/static/img/wx/weather/windpower.png" style="width:50rpx;height:50rpx;" />
+        </view>
+        <view style="font-size:.8rem;height:50rpx;text-align:center;">风力: {{data.windpower}}级</view>
+      </view>
+
+      <view class="fl">最近更新时间: {{data.reporttime}}</view>
+      <view class="fr text-link-type" bindtap="toDetail">详情</view>
+      <view class="clearfix"></view>
+    </view>
+
+    <view class="container-item"
+      style="background-image: linear-gradient(to bottom right, rgba(234, 229, 201, .8), rgba(108, 198, 203, .8));">
+      建议
+      <view wx:if="{{data.temperature<18}}"
+        style="min-height:50rpx;margin:20rpx 0;padding:20rpx;background:rgba(255,255,255,.3);border-radius:5rpx;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/leng.svg"
+          style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        天气转凉，空气湿度较大，较易发生感冒，体质较弱的朋友请注意适当防护。
+      </view>
+      <!-- <view wx:if="{{data.temperature>=18 && data.temperature<=28}}"
+        style="min-height:50rpx;margin:20rpx 0;padding:20rpx;background:rgba(255,255,255,.3);border-radius:5rpx;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/yiren.svg"
+          style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        温度适宜，常备外套，谨防感冒，做好卫生防护。
+      </view> -->
+      <view wx:if="{{data.temperature>28}}" style="height:50rpx;background:rgba(255,255,255,.3);border-radius:5rpx;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/hot.svg"
+          style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        天气较热，注意避暑，看管好自己的小孩，不要去水塘游泳。
+      </view>
+      <!-- <view wx:if="{{weatherImage==='sun.svg'}}"
+        style="min-height:50rpx;margin:20rpx 0;padding:20rpx;background:rgba(255,255,255,.3);border-radius:5rpx;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/windspeed.svg"
+          style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        天气晴朗，适合外出游玩放松，同时注意出行安全。
+      </view> -->
+      <view
+        wx:if="{{weatherImage==='small-rain.svg' || weatherImage==='mid-rain.svg' || weatherImage==='big-rain.svg'}}"
+        style="min-height:50rpx;margin:20rpx 0;padding:20rpx;background:rgba(255,255,255,.3);border-radius:5rpx;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/san.svg"
+          style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        有降水，请带上雨伞，如果你喜欢雨中漫步，享受大自然给予的温馨和快乐，在短时间外出可收起雨伞。
+      </view>
+      <view style="min-height:50rpx;margin:20rpx 0;padding:20rpx;background:rgba(255,255,255,.3);border-radius:5rpx;">
+        <image src="https://caseyfu.gitee.io/static/img/wx/weather/virus.svg"
+          style="width:45rpx;height:45rpx;vertical-align:middle;" />
+        疫情期间，请带好口罩，切勿在人多的地方扎堆，谨防感染！
+      </view>
+    </view>
+    <i-footer style="position:absolute;width:100%;bottom:10rpx;" />
+  </view>
+  <image src="https://caseyfu.gitee.io/static/img/wx/bg/bg-sky.jpg" class="bg" />
+</view>

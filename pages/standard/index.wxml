@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="container-mask">
+		<top-nav navTitle="推箱子" backUrl="/pages/portal/index" haveHome="true" />
+
+		111
+
+
+		<i-footer style="position:absolute;width:100%;bottom:10rpx;" />
+	</view>
+	<image src="https://caseyfu.gitee.io/static/img/wx/bg/bg-sky.jpg" class="bg" />
+</view>

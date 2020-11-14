@@ -1,0 +1,39 @@
+<view class='container'>
+    <view class="container-mask">
+        <top-nav navTitle="本地存储管理"
+            navStyle="background-image: linear-gradient(to bottom, rgba(65, 184, 131, .9), rgba(65, 184, 131, 0));"
+            backUrl="/pages/portal/index" haveHome="true" />
+
+        <view>{{msg}}</view>
+        <view>
+            当前使用:{{storageInfo.currentSize}}KB
+            <i-progress percent="{{storageInfo.currentPortion}}" status="wrong"></i-progress>
+        </view>
+        <view>
+            当前剩余:{{storageInfo.surplusSize}}KB
+            <i-progress percent="{{storageInfo.surplusPortion}}" status="success"></i-progress>
+        </view>
+        <view>最高限制:{{storageInfo.limitSize}}KB</view>
+        <view>
+
+            <input class="inputBar" bindinput="bindKeyInput" placeholder="输入key值" />
+            <input class="inputBar" bindinput="bindDataInput" placeholder="输入data值" />
+        </view>
+        <i-button bind:click="getLocalData" type="primary" size="small">读取数据</i-button>
+        <i-button bind:click="setLocalData" type="primary" size="small">存储数据</i-button>
+        <!-- <i-button bind:click="detailLocalData" type="primary">获取本地存储数据</i-button> -->
+        <i-button bind:click="printLocalData" type="primary" size="small">切换本地存储</i-button>
+        <i-button bind:click="removeLocalData" type="error" size="small">移除键值</i-button>
+        <i-button bind:click="cleanLocalData" type="error" size="small">清空本地存储</i-button>
+        <view>{{allKeys.data}}</view>
+        <i-modal visible="{{ modalVisible }}" bind:ok="handleCloseOk" bind:cancel="handleCloseNot">
+            <view>您老人家确定删除???</view>
+        </i-modal>
+        <view>
+            实时获取输入值：
+            <view>{{inputValue}}</view>
+            <view>{{data}}</view>
+        </view>
+        <i-message id="message" />
+    </view>
+</view>

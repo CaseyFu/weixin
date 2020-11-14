@@ -1,0 +1,111 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="container-mask">
+		<top-nav navTitle="图标管理" backUrl="/pages/portal/index" haveHome="true" navTitleColor="black"
+			navStyle="font-weight:bold" />
+		<view style="width:90%;margin:auto;font-weight:bold;text-align:center;">总Icon数: {{total}}</view>
+		<!-- 天气预报Icon -->
+		<view style="width:90%;margin:auto;border-bottom:8rpx solid lightgreen;font-weight:bold;">天气预报Icon
+		</view>
+		<view style="width:90%;margin:auto;">
+			<view style="font-size:.8rem;color:gray;">图标数量: {{icons.weather.length}} </view>
+			<view style="font-size:.8rem;color:gray;">统一前缀: https://caseyfu.gitee.io/static/img/wx/weather/ </view>
+			<view wx:for="{{icons.weather}}" wx:key="index" wx:for-index="index" wx:for-item="item"
+				style="display:inline-block;width:120rpx;height:120rpx;margin:5rpx;">
+				<view style="width:120rpx;height:90rpx;">
+					<image src="https://caseyfu.gitee.io/static/img/wx/weather/{{item}}"
+						style="display:block;width:90rpx;height:90rpx;margin:auto;" />
+				</view>
+				<view style="width:120rpx;font-size:.6rem;text-align:center;background:lightblue;">{{item}}
+				</view>
+			</view>
+		</view>
+
+		<!-- 推箱子Icon -->
+		<view style="width:90%;margin:auto;border-bottom:8rpx solid lightgreen;font-weight:bold;">推箱子Icon</view>
+		<view style="width:90%;margin:auto;">
+			<view style="font-size:.8rem;color:gray;">图标数量: {{icons.pushBox.length}} </view>
+			<view style="font-size:.8rem;color:gray;">统一前缀: https://caseyfu.gitee.io/static/img/wx/push-box/ </view>
+			<view wx:for="{{icons.pushBox}}" wx:key="index" wx:for-index="index" wx:for-item="item"
+				style="display:inline-block;width:120rpx;height:120rpx;margin:5rpx;">
+				<view style="width:120rpx;height:90rpx;">
+					<image src="https://caseyfu.gitee.io/static/img/wx/push-box/{{item}}"
+						style="display:block;width:90rpx;height:90rpx;margin:auto;" />
+				</view>
+				<view style="width:120rpx;font-size:.6rem;text-align:center;background:lightblue;">{{item}}
+				</view>
+			</view>
+		</view>
+
+		<!-- 会议邀请函Icon -->
+		<view style="width:90%;margin:auto;border-bottom:8rpx solid lightgreen;font-weight:bold;">会议邀请函Icon</view>
+		<view style="width:90%;margin:auto;">
+			<view style="font-size:.8rem;color:gray;">图标数量: {{icons.invitation.length}} </view>
+			<view style="font-size:.8rem;color:gray;">统一前缀: https://caseyfu.gitee.io/static/img/wx/invitation/ </view>
+			<view wx:for="{{icons.invitation}}" wx:key="index" wx:for-index="index" wx:for-item="item"
+				style="display:inline-block;width:120rpx;height:120rpx;margin:5rpx;">
+				<view style="width:120rpx;height:90rpx;">
+					<image src="https://caseyfu.gitee.io/static/img/wx/invitation/{{item}}"
+						style="display:block;width:90rpx;height:90rpx;margin:auto;" />
+				</view>
+				<view style="width:120rpx;font-size:.6rem;text-align:center;background:lightblue;">{{item}}
+				</view>
+			</view>
+		</view>
+
+
+
+		<!-- 应用市场Icon -->
+		<view style="width:90%;margin:auto;border-bottom:8rpx solid lightgreen;font-weight:bold;">应用市场Icon</view>
+		<view style="width:90%;margin:auto;">
+			<view style="font-size:.8rem;color:gray;">图标数量: {{icons.portal.length}} </view>
+			<view style="font-size:.8rem;color:gray;">统一前缀: https://caseyfu.gitee.io/static/img/wx/portal/ </view>
+			<view wx:for="{{icons.portal}}" wx:key="index" wx:for-index="index" wx:for-item="item"
+				style="display:inline-block;width:120rpx;height:120rpx;margin:5rpx;">
+				<view style="width:120rpx;height:90rpx;">
+					<image src="https://caseyfu.gitee.io/static/img/wx/portal/{{item}}"
+						style="display:block;width:90rpx;height:90rpx;margin:auto;" />
+				</view>
+				<view style="width:120rpx;font-size:.6rem;text-align:center;background:lightblue;">{{item}}
+				</view>
+			</view>
+		</view>
+
+		<!-- 系统Icon -->
+		<view style="width:90%;margin:auto;border-bottom:8rpx solid lightgreen;font-weight:bold;">系统Icon</view>
+		<view style="width:90%;margin:auto;">
+			<view style="font-size:.8rem;color:gray;">图标数量: {{icons.sysIcon.length}} </view>
+			<view style="font-size:.8rem;color:gray;">统一前缀: https://caseyfu.gitee.io/static/img/wx/sys-icon/ </view>
+			<view wx:for="{{icons.sysIcon}}" wx:key="index" wx:for-index="index" wx:for-item="item"
+				style="display:inline-block;width:120rpx;height:120rpx;margin:5rpx;">
+				<view style="width:120rpx;height:90rpx;">
+					<image src="https://caseyfu.gitee.io/static/img/wx/sys-icon/{{item}}"
+						style="display:block;width:90rpx;height:90rpx;margin:auto;" />
+				</view>
+				<view style="width:120rpx;font-size:.6rem;text-align:center;background:lightblue;">{{item}}
+				</view>
+			</view>
+		</view>
+
+		<!-- 其它Icon -->
+		<view style="width:90%;margin:auto;border-bottom:8rpx solid lightgreen;font-weight:bold;">其它Icon</view>
+		<view style="width:90%;margin:auto;">
+			<view style="font-size:.8rem;color:gray;">图标数量: {{icons.otherIcon.length}} </view>
+			<view style="font-size:.8rem;color:gray;">统一前缀: https://caseyfu.gitee.io/static/img/wx/other-icon/ </view>
+			<view wx:for="{{icons.otherIcon}}" wx:key="index" wx:for-index="index" wx:for-item="item"
+				style="display:inline-block;width:120rpx;height:120rpx;margin:5rpx;">
+				<view style="width:120rpx;height:90rpx;">
+					<image src="https://caseyfu.gitee.io/static/img/wx/other-icon/{{item}}"
+						style="display:block;width:90rpx;height:90rpx;margin:auto;" />
+				</view>
+				<view style="width:120rpx;font-size:.6rem;text-align:center;background:lightblue;">{{item}}
+				</view>
+			</view>
+		</view>
+
+
+		<view class="stuff"></view>
+		<i-footer style="bottom:10rpx;" />
+	</view>
+	<!-- <image src="https://caseyfu.gitee.io/static/img/wx/bg/bg-sky.jpg" class="bg" /> -->
+</view>

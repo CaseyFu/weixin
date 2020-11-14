@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="container-mask">
+		<top-nav navTitle="会议邀请函" backUrl="/pages/portal/index" haveHome="true" navTitleColor="black"
+			navStyle="font-weight:bold" />
+		<view style="height:350rpx;"></view>
+		<image src="https://caseyfu.gitee.io/static/img/wx/invitation/cup1.png" style="display:block;width:128rpx;height:128rpx;margin:auto;" />
+		<view style="color:white;text-align:center;font-weight:300;font-size:.9rem;">{{enConferenceName}}
+		</view>
+		<view style="color:#FF7F27;text-align:center;font-weight:bold;font-size:1.8rem;">{{conferenceName}}</view>
+		<view class="stuff"></view>
+		<view class="stuff"></view>
+		<view style="color:white;text-align:center;font-size:.9rem;font-weight:bold;font-family:'monospace'">{{date}}</view>
+		<view class="stuff"></view>
+		<view class="stuff"></view>
+		<view style="color:white;text-align:center;font-size:.9rem;">未来有你</view>
+		<view style="color:white;text-align:center;font-size:.9rem;">一切可期</view>
+		<view class="stuff"></view>
+		<view style="color:white;text-align:center;font-size:.9rem;margin-bottom:5rpx;">{{address}} {{hotline}}
+		</view>
+		<view style="color:white;text-align:center;font-size:.9rem;">{{site}}
+		</view>
+		<view class="stuff"></view>
+		<view class="stuff"></view>
+		<view bindtap="toDetail"
+			style="display:block;width:120rpx;height:120rpx;margin:auto;background:lightblue;border-radius:50%;text-align:center;line-height:120rpx;color:#41B883;font-weight:bold;font-style:italic;">
+			开启
+		</view>
+		<view class="stuff"></view>
+		<view class="stuff"></view>
+		<i-footer textColor="white" />
+	</view>
+	<image src="https://caseyfu.gitee.io/static/img/wx/bg/bg-invitation.jpg" class="bg" />
+</view>

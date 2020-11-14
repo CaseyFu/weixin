@@ -4,21 +4,21 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
-    "enhance": true,
+    "enhance": false,
     "postcss": true,
     "preloadBackgroundData": false,
     "minified": true,
     "newFeature": true,
     "coverView": true,
-    "nodeModules": true,
+    "nodeModules": false,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
     "uglifyFileName": false,
     "checkInvalidKey": true,
-    "checkSiteMap": false,
+    "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
@@ -28,18 +28,16 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "useIsolateContext": true,
     "useCompilerModule": true,
     "userConfirmedUseCompilerModuleSwitch": false,
     "packNpmManually": false,
-    "packNpmRelationList": [],
-    "minifyWXSS": true
+    "packNpmRelationList": []
   },
   "compileType": "miniprogram",
-  "libVersion": "2.11.0",
-  "appid": "wx952d2694c0439794",
-  "projectname": "wx",
+  "libVersion": "2.10.0",
+  "appid": "wx7469979ed241593d",
+  "projectname": "canvas%20drawImage%20video",
   "debugOptions": {
     "hidedInDevtools": []
   },
@@ -48,9 +46,11 @@
   "simulatorPluginLibVersion": {},
   "condition": {
     "search": {
+      "current": -1,
       "list": []
     },
     "conversation": {
+      "current": -1,
       "list": []
     },
     "game": {
@@ -58,6 +58,7 @@
       "list": []
     },
     "miniprogram": {
+      "current": -1,
       "list": []
     }
   }

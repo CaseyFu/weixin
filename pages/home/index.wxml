@@ -1,0 +1,25 @@
+<!-- index.wxml -->
+<view class="container">
+    <view class="container-mask">
+        <top-nav navTitle="多么神奇的树" navStyle="background: linear-gradient(to bottom right, #41B883, #C7EDCC);"
+            navTitleColor="black" />
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <view
+            style="width:200rpx;height:200rpx;margin:auto;border-radius:50%;border:15rpx solid rgba(200, 200, 200, .5);overflow:hidden;">
+            <image src="https://caseyfu.gitee.io/static/img/wx/headimg.jpg" style="width:200rpx;height:200rpx;" />
+        </view>
+        <view class="stuff"></view>
+        <view class="text-align-center">小程序开发</view>
+        <view style="font-size:.6rem;color:gray;text-align:center">图片从网络上加载，加载缓慢请等待！</view>
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <image src="https://caseyfu.gitee.io/static/img/logo/flyman-black.png"
+            style="display:block;width:200rpx;height:200rpx;margin:auto;" mode="aspectFill" />
+    </view>
+</view>

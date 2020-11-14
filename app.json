@@ -1,73 +1,50 @@
 {
     "pages": [
-        "pages/convey/convey",
-        "pages/circle/circle",
-        "pages/17/17",
-        
-
-        "pages/16/16",
-        "pages/15/15",
-        "pages/14/14",
-        "pages/12/12",
-        "pages/13/13",
-        "pages/6/6",
-        "pages/7/7",
-        "pages/8/8",
-        "pages/9/9",
-        "pages/10/10",
-        "pages/11/11",
-        "pages/4/4",
-        "pages/3/3",
-        "pages/2/2",
-
-        "pages/test/test",
-        "pages/index/index",
-        "pages/flexTest/flexTest",
-        "pages/todoList/todoList",
-        "pages/background/background",
-        "pages/localStorage/localStorage",
-        "pages/questionnaire/questionnaire",
-        "pages/qr/qr",
-        "pages/logs/logs",
-        "pages/guessFist/guessFist",
-        "pages/canvas/canvas",
-        "pages/5/5"
+        "pages/home/index",
+        "pages/portal/index",
+        "pages/icon/index",
+        "pages/push-box/home/index",
+        "pages/push-box/game/index",
+        "pages/weather/home/index",
+        "pages/weather/detail/index",
+        "pages/invitation/detail/index",
+        "pages/demo/index",
+        "pages/invitation/home/index",
+        "pages/storage/index",
+        "pages/qr/index",
+        "pages/guess-fist/index",
+        "pages/questionnaire/index"
     ],
     "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#41B883",
-        "navigationBarTitleText": "CaseyFu",
-        "navigationBarTextStyle": "white"
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "多么神奇的树",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
     },
     "tabBar": {
         "color": "#000",
         "selectedColor": "#000",
-        "backgroundColor": "white",
-        "list": [
-
-            {
-                "pagePath": "pages/index/index",
-                "text": "主页",
-                "iconPath": "/images/icon/index.png",
-                "selectedIconPath": "/images/selectedIcon/index.png"
+        "backgroundColor": "#FFF",
+        "list": [{
+                "pagePath": "pages/home/index",
+                "text": "Home",
+                "iconPath": "/images/sys-icon/unselected-icon/home.png",
+                "selectedIconPath": "/images/sys-icon/selected-icon/home.png"
             },
             {
-                "pagePath": "pages/convey/convey",
-                "text": "传送门",
-                "iconPath": "/images/icon/convey.png",
-                "selectedIconPath": "/images/selectedIcon/convey.png"
-            },
-            {
-                "pagePath": "pages/test/test",
-                "text": "富文本练习",
-                "iconPath": "/images/icon/game.png",
-                "selectedIconPath": "/images/selectedIcon/game.png"
+                "pagePath": "pages/portal/index",
+                "text": "Portal",
+                "iconPath": "/images/sys-icon/unselected-icon/portal.png",
+                "selectedIconPath": "/images/sys-icon/selected-icon/portal.png"
             }
         ],
         "position": "bottom"
     },
     "usingComponents": {
-        "back-home-btn": "/components/backHomeBtn/backHomeBtn",
+        "top-nav": "/components/top-nav/index",
+        "i-footer": "/components/footer/index",
+        "back-home-btn": "/components/back-home-btn/index",
         "i-grid": "/dist/grid/index",
         "i-grid-item": "/dist/grid-item/index",
         "i-grid-icon": "/dist/grid-icon/index",
@@ -82,13 +59,24 @@
         "i-progress": "/dist/progress/index",
         "i-modal": "/dist/modal/index",
         "i-card": "/dist/card/index",
-        "w-header": "/components/header/header",
-        "w-footer": "/components/footer/footer"
-
-
-
-
+        "i-icon": "/dist/icon/index",
+        "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"
+    },
+    "plugins": {
+        "routePlan": {
+            "version": "1.0.8",
+            "provider": "wx50b5593e81dd937a"
+        }
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示"
+        }
     },
     "workers": "workers",
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "useExtendedLib": {
+        "kbone": true,
+        "weui": true
+    }
 }

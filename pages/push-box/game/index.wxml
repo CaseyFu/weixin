@@ -1,0 +1,52 @@
+<!--index.wxml-->
+<view class="container" bindtouchend="handletouchend" bindtouchstart="handletouchtart" bindtouchmove="handletouchmove">
+	<view class="container-mask">
+		<top-nav navTitle="第{{level}}关" backUrl="/pages/push-box/home/index" navTitleColor="black"
+			navStyle="font-weight:bold" />
+
+		<!-- 重新开始按钮 -->
+		<view>
+			<button type="primary" bindtap="restartGame" size="mini" style="display:block;width:250rpx;margin:auto;">
+				<image src="https://caseyfu.gitee.io/static/img/wx/push-box/refresh.svg"
+					style="width:35rpx;height:35rpx;vertical-align:middle;" /> 重新开始
+			</button>
+		</view>
+		<view class="stuff"></view>
+
+		<!-- 游戏画布 -->
+		<canvas wx-if="{{canvas}}" canvas-id="myCanvas"
+			style="width:300px;height:300px;margin:auto;border:13px solid rgba(100, 100, 100, .3);border-radius:15rpx;"></canvas>
+		<view class="stuff"></view>
+		<view style="text-align:center;color:gray;">当前状态: {{text}}</view>
+
+		<view>
+			<view style="margin-left:80rpx;">
+				<image src="https://caseyfu.gitee.io/static/img/wx/push-box/direction.svg"
+					style="width:40rpx;height:40rpx;vertical-align:middle;" />
+				通过上、下、左、右<span style="color:orange;">滑动屏幕</span>控制人物</view>
+		</view>
+		<view>
+			<view style="margin-left:80rpx;">
+				<image src="https://caseyfu.gitee.io/static/img/wx/push-box/footprint.svg"
+					style="width:40rpx;height:40rpx;vertical-align:middle;" /> 当前步数:
+				{{step}}
+			</view>
+		</view>
+
+		<view>
+			<view style="margin-left:80rpx;">
+				<image src="https://caseyfu.gitee.io/static/img/wx/push-box/time.svg"
+					style="width:40rpx;height:40rpx;vertical-align:middle;" /> 当前时间:
+				{{second}}.{{millisecond}}s
+			</view>
+		</view>
+		<view style="text-align:center;color:gray;">将箱子推到木板上就通关！</view>
+		<mp-dialog title="消息" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+			<view>游戏通关！</view>
+			<view>共用去: {{step}}步</view>
+			<view>耗费: {{second}}.{{millisecond}}s</view>
+		</mp-dialog>
+		<i-footer style="position:absolute;width:100%;bottom:10rpx;" />
+	</view>
+	<!-- <image src="https://caseyfu.gitee.io/static/img/wx/push-box/bg/bg-sky.jpg" class="bg" /> -->
+</view>

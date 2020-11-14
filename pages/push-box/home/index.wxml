@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+	<view class="container-mask">
+		<top-nav navTitle="推箱子" backUrl="/pages/portal/index" haveHome="true" navTitleColor="black"
+			navStyle="font-weight:bold" />
+
+		<!-- 关卡列表 -->
+		<view class="levellist">
+			<view class="level" wx:for="{{levels}}" wx:key="index" wx:for-index="index" wx:for-item="item"
+				bindtap="chooseLevel" data-level='{{index}}'>
+				<image src="https://caseyfu.gitee.io/static/img/wx/push-box/round/{{item}}"></image>
+				<text>第{{index+1}}关</text>
+			</view>
+		</view>
+
+		<i-footer style="position:absolute;width:100%;bottom:10rpx;" />
+	</view>
+	<image src="https://caseyfu.gitee.io/static/img/wx/bg/bg-sky.jpg" class="bg" />
+</view>

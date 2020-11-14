@@ -1,0 +1,4 @@
+<view class='container'>
+    <view style="font-weight:400;font-size:.8rem;text-align:center;color:{{textColor}}">微信小程序开发</view>
+    <view style="font-weight:400;font-size:.8rem;text-align:center;color:{{textColor}}">© 2020 17软件 付凯</view>
+</view>

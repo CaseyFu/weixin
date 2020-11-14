@@ -1,9 +1,0 @@
-/* pages/video/video.wxss */
-.container {}
-
-.img {
-    display: block;
-    width: 50%;
-    /* height: 500rpx; */
-    margin: auto;
-}

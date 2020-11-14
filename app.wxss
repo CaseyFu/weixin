@@ -1,9 +1,11 @@
 /**app.wxss**/
 
-@import "/static/fonts/JetBrainsMono.wxss";
+body {
+    font-size: 16px;
+}
 
 .container {
-    font-family: 'JetBrains Mono', monospace, 'Courier New', Courier;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     margin-bottom: 40rpx;
@@ -28,9 +30,19 @@
     display: block;
 } */
 
-.title {
+.text-title-type {
     text-align: center;
     margin-bottom: 20rpx;
+    color: #808080;
+    font-weight: bold;
+}
+
+.text-link-type {
+    color: #00A2E8;
+}
+
+.text-align-center {
+    text-align: center;
 }
 
 textarea,
@@ -48,10 +60,31 @@ input {
     height: 100rpx;
 }
 
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .background {
     width: 100%;
     height: 100%;
     position: fixed;
     background-size: 100% 100%;
     z-index: -1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
 }

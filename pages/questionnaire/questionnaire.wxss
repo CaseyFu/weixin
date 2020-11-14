@@ -1,9 +1,0 @@
-/* pages/video/video.wxss */
-.container {}
-
-.radio {
-    height: 70rpx;
-    width: 100%;
-    border-bottom: 1rpx solid #dcdcdc;
-    margin: 5rpx;
-}

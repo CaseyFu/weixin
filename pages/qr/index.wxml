@@ -1,0 +1,21 @@
+<view class='container'>
+    <view class="container-mask">
+        <top-nav navTitle="二维码"
+            navStyle="background-image: linear-gradient(to bottom, rgba(65, 184, 131, .9), rgba(65, 184, 131, 0));"
+            backUrl="/pages/portal/index" haveHome="true" />
+        <view class="stuff"></view>
+        <view class="stuff"></view>
+        <view class="text-align-center">{{url}}</view>
+        <view style="width:500rpx;height:500rpx;margin:auto;">
+            <canvas style="width:500rpx;height:500rpx" id="{{canvasId}}" canvas-id="{{canvasId}}" />
+        </view>
+        <view class="stuff"></view>
+        <form class="form" bindsubmit="getUrl">
+            <input style="width:100%;border: 1px solid gray;border-radius: 5px;font-size: .9rem;" type="text" name="url"
+                placeholder="{{url}}" />
+            <view class="stuff"></view>
+            <button style="display:block;width:70%;margin:auto;" form-type="submit" size="mini"
+                type="primary">提交</button>
+        </form>
+    </view>
+</view>

@@ -1,7 +1,7 @@
 {
   "name": "wx",
   "version": "1.0.0",
-  "description": "- 石头剪刀布",
+  "description": "wxxcx",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/CaseyFu/weixin#readme",
   "dependencies": {
+    "weui-miniprogram": "^1.0.6",
     "wxmp-qrcode": "^2.0.3"
   }
 }
