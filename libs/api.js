@@ -1,5 +1,5 @@
 /**
- * 返回实时位置坐标（经纬度）
+ * 返回实时位置坐标对象（经纬度）
  */
 function realLocation() {
   return new Promise((resolve, reject) => {
@@ -11,15 +11,9 @@ function realLocation() {
       },
       success: function (res) {
         let coordinate = {
-          // 其它自定义位置
-          // longitude: 114.539060,
-          // latitude: 38.036654
-          // 实时位置
           longitude: res.longitude,
           latitude: res.latitude
         }
-        // console.log("res: ", res)
-        // console.log("经度纬度: ", coordinate)
         resolve(coordinate)
       },
       fail: function () {
@@ -72,14 +66,12 @@ function reverseGeoCoding(coordinate) {
         "content-type": "application/json"
       },
       success: function (res) {
-        console.log("逆地理编码", res)
         let address = {
           province: res.data.regeocode.addressComponent.province,
           city: res.data.regeocode.addressComponent.city,
           district: res.data.regeocode.addressComponent.district,
           adcode: res.data.regeocode.addressComponent.adcode
         }
-        // console.log("地址: ", address)
         resolve(address)
       },
       fail: function () {
@@ -88,9 +80,10 @@ function reverseGeoCoding(coordinate) {
     })
   })
 }
+
 /**
- * 根据获取天气 coordinate可选，自定义位置 
- * 
+ * 根据 adcode 获取实时天气
+ * @param {Integer} adcode 城市编码
  */
 function getWeather(adcode) {
   return new Promise((resolve, reject) => {
@@ -105,7 +98,6 @@ function getWeather(adcode) {
         "content-type": "application/json"
       },
       success: function (res) {
-        // console.log("weather", res)
         resolve(res)
       },
       fail: function () {
@@ -114,9 +106,10 @@ function getWeather(adcode) {
     })
   })
 }
+
 /**
- * 根据经纬度获取和风天气近3天的天气情况
- * @param {String} coordinate 经纬度
+ * 根据经纬度坐标获取和风天气近3天的天气情况
+ * @param {String} coordinate 经纬度坐标
  */
 function getDetailWeather(coordinate) {
   return new Promise((resolve, reject) => {
@@ -131,7 +124,6 @@ function getDetailWeather(coordinate) {
         "content-type": "application/json"
       },
       success: function (res) {
-        console.log("weather", res)
         resolve(res)
       },
       fail: function () {
@@ -140,7 +132,6 @@ function getDetailWeather(coordinate) {
     })
   })
 }
-
 
 module.exports = {
   realLocation,
